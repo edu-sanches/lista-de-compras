@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* COLORS */
+        /* BACKGROUND */
+        --background-primary: #F4F5FB;
+        --background-secondary: #FFFFFF;
+
+        /* COLOR */
+        --color-brand: #CA3884;
+        --color-brand-hover: #A52C6B;
+        --color-danger: #C93847;
+
+        /* CONTENT */
+        --content-primary: #080B12;
+        --content-secondary: #374151; 
+        --content-tertiary: #9CA3AF;
+        --always-white: #FFFFFF;
+
+        /* BORDERS */
+        --border-primary: #D1D5DB;
+        --border-hover: #B9C2D0;
+
+    /* FONTS */
+        /* FONT FAMILY */
+        --inter-font: "Inter", Arial, sans-serif;
+
+        /* FONT STYLES */
+        --title: 700 1.5rem/2rem var(--inter-font);
+        --label: 600 1rem/1.25rem var(--inter-font);
+        --paragraph: 500 1rem/1.25rem var(--inter-font);
+        --link: 500 0.875rem/1rem var(--inter-font);
+}
