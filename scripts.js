@@ -39,6 +39,8 @@ document.getElementById('create-item').addEventListener('click', () => {
         let selectLi = document.querySelectorAll('li')
         let deleteBtn = document.querySelectorAll('.btn-delete')
 
+        itemInput.value = ""
+
         // Chama a função de deletar os itens criados
         deleteItems(deleteBtn, selectLi)
     }
