@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,10 +12,35 @@
     <title>Lista de Compras</title>
 
     <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
-    <h1>testando fonte Inter</h1>
+    <img src="assets/logo.svg" alt="quicklist logo">
+
+    <main class="container">
+        <a href="#"><i class="ph-bold ph-arrow-left"></i>Voltar</a>
+        <h1>Compras da semana</h1>
+        <form action="">
+            <div class="flex gap-16">
+                <input class="flex-1" id="item" type="text" name="item" placeholder="Adicione um novo item">
+                <button id="create-item" type="button">Adicionar item</button>
+            </div>
+            <ul>
+                
+            </ul>
+        </form>
+    </main>
+
+    <div class="toast-message container">
+        <img src="assets/icons/warning-circle-filled.svg" alt="warning icon">
+        <span>O item foi removido da lista</span>
+        <img id="close-toast" src="assets/icons/x.svg" alt="close icon">
+
+    </div>
 </body>
+
 </html>
 
 <script src="scripts.js"></script>
