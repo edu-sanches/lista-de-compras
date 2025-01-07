@@ -1,0 +1,24 @@
+input[type="text"] {
+    appearance: none;
+    
+    border-radius: 0.75rem;
+    border: 2px solid var(--border-primary);
+    background-color: var(--background-secondary);
+    padding: 0.6875rem 1.125rem;
+
+    font: var(--placeholder);
+    color: var(--content-primary);
+
+    &::placeholder {
+        font: var(--placeholder);
+        color: var(--content-tertiary);
+    }
+
+    &:hover {
+        border: 2px solid var(--border-hover);
+    }
+
+    &:focus {
+        outline-color: var(--color-brand);
+    }
+}
