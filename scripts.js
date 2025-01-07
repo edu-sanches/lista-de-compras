@@ -1,6 +1,10 @@
 let itemInput = document.getElementById('item')
 let selectUl = document.querySelector('ul')
 
+document.querySelector('form').addEventListener('submit', (event) => {
+    event.preventDefault()
+})
+
 document.getElementById('create-item').addEventListener('click', () => {
     if (!itemInput.value == "") {
         // Cria o elemento HTML <li>
@@ -62,9 +66,9 @@ function closeToast() {
     toastMessage.style.display = 'flex'
     setTimeout(() => {
         toastMessage.classList.add('fade-out')
-        setTimeout(() => {
+        toastMessage.transitionend = () => {
             toastMessage.style.display = 'none'
-        }, 2000)
-    }, 800)
+        }
+    }, 500)
 }
 
